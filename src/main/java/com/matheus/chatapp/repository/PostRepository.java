@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.repository;
+package com.matheus.chatapp.repository;
 
 import java.util.Date;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.matheus.workshopmongo.domain.Post;
+import com.matheus.chatapp.domain.Post;
 
 @Repository
 public interface PostRepository extends MongoRepository<Post, String> {

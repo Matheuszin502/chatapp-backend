@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.resources.util;
+package com.matheus.chatapp.resources.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

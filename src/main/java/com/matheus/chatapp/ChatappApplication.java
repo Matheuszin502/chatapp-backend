@@ -1,13 +1,13 @@
-package com.matheus.workshopmongo;
+package com.matheus.chatapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WorkshopmongoApplication {
+public class ChatappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WorkshopmongoApplication.class, args);
+		SpringApplication.run(ChatappApplication.class, args);
 	}
 
 }

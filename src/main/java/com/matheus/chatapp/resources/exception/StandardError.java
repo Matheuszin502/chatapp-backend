@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.resources.exception;
+package com.matheus.chatapp.resources.exception;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.services;
+package com.matheus.chatapp.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,10 +6,11 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.matheus.workshopmongo.domain.User;
-import com.matheus.workshopmongo.dto.UserDTO;
-import com.matheus.workshopmongo.repository.UserRepository;
-import com.matheus.workshopmongo.services.exception.ObjectNotFoundException;
+import com.matheus.chatapp.domain.Post;
+import com.matheus.chatapp.domain.User;
+import com.matheus.chatapp.dto.UserDTO;
+import com.matheus.chatapp.repository.UserRepository;
+import com.matheus.chatapp.services.exception.ObjectNotFoundException;
 
 @Service
 public class UserService {
@@ -46,8 +47,16 @@ public class UserService {
 	}
 	
 	private void updateData(User newObj, User obj) {
-		newObj.setName(obj.getName());
-		newObj.setEmail(obj.getEmail());
+		if (obj.getName() != null && obj.getName() != newObj.getName())
+			newObj.setName(obj.getName());
+		if (obj.getEmail() != null && obj.getEmail() != newObj.getEmail())
+			newObj.setEmail(obj.getEmail());
+	}
+	
+	public User updatePosts(String id, Post post) {
+		User user = repo.findById(id).get();
+		user.getPosts().add(post);
+		return repo.save(user);
 	}
 
 	public User fromDTO(UserDTO objDto) {

@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.domain;
+package com.matheus.chatapp.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;

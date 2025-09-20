@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.resources;
+package com.matheus.chatapp.resources;
 
 import java.net.URI;
 import java.util.List;
@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.matheus.workshopmongo.domain.Post;
-import com.matheus.workshopmongo.domain.User;
-import com.matheus.workshopmongo.dto.UserDTO;
-import com.matheus.workshopmongo.services.UserService;
+import com.matheus.chatapp.domain.Post;
+import com.matheus.chatapp.domain.User;
+import com.matheus.chatapp.dto.UserDTO;
+import com.matheus.chatapp.services.UserService;
 
 @RestController
 @RequestMapping(value="/users")

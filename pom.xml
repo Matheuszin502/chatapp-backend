@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.matheus</groupId>
-	<artifactId>workshopmongo</artifactId>
+	<artifactId>chatapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>workshopmongo</name>
-	<description>Workshop Spring Boot com MongoDB</description>
+	<name>chatapp</name>
+	<description>Backend de uma sala de chat em Spring Boot e MongoDB</description>
 	<url />
 	<licenses>
 		<license />

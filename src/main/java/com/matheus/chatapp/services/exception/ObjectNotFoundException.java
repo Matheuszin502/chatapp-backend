@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.services.exception;
+package com.matheus.chatapp.services.exception;
 
 public class ObjectNotFoundException extends RuntimeException{
 	private static final long serialVersionUID = 1L;

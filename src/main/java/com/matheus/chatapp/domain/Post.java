@@ -1,4 +1,4 @@
-package com.matheus.workshopmongo.domain;
+package com.matheus.chatapp.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import java.util.Objects;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.matheus.workshopmongo.dto.AuthorDTO;
-import com.matheus.workshopmongo.dto.CommentDTO;
+import com.matheus.chatapp.dto.AuthorDTO;
+import com.matheus.chatapp.dto.CommentDTO;
 
 @Document
 public class Post implements Serializable {
